@@ -22,6 +22,15 @@ ul {
 
 .timeline-list {
   display: inline-block;
+  position: relative;
+}
+
+.timeline-list::before {
+  content: "";
+  border-left: 5px solid #24608A;
+  height: 100%;
+  position: absolute;
+  left: 50%;
 }
 
 .octicon {
@@ -36,25 +45,29 @@ ul {
   background-color: white;
   max-width: 25%;
   position: relative;
+  left: 52%;
   height: 100%;
-  border-left: 2px solid #256288;
   padding-left: 10px;
 }
 
-/* .timeline-event::before {
+.timeline-event::after {
   content: "";
+  height: 0;
+  width: 0;
 
-  border-left: 2px solid;
-} */
+  border-top: solid 10px transparent;
+  border-bottom: solid 10px transparent;
+  border-right: solid 10px white;
 
+  position: absolute;
+  top: 4%;
+  right: 100%;
+}
 
 .date {
   background-color: #EC515C;
   color: white;
   display: inline-block;
-  /* position: absolute;
-  top: 0;
-  right: 0; */
   float: right;
 }
 
@@ -64,6 +77,11 @@ ul {
 
 .timeline-event>h1 {
   font-weight: bold;
+  padding: 10px;
+}
+
+.timeline-event:nth-child(even) h1 {
+  text-align: right;
 }
 
 .event-button {
