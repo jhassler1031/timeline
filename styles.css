@@ -10,6 +10,7 @@ img {
 
 body {
   font-family: helvetica, sans-serif;
+  background-color: #A9A9A9
 }
 
 ul {
@@ -23,19 +24,51 @@ ul {
   display: inline-block;
 }
 
-.octicon octicon-pencil {
+.octicon {
   position: absolute;
-  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: #256288;
+  border-radius: 25px;
 }
 
 .timeline-event {
-  display: inline-block;
+  background-color: white;
+  max-width: 25%;
   position: relative;
   height: 100%;
+  border-left: 2px solid #256288;
+  padding-left: 10px;
 }
 
-.timeline-event::before {
+/* .timeline-event::before {
   content: "";
 
   border-left: 2px solid;
+} */
+
+
+.date {
+  background-color: #EC515C;
+  color: white;
+  display: inline-block;
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+  float: right;
+}
+
+.timeline-event:nth-child(even) .date {
+  float: left;
+}
+
+.timeline-event>h1 {
+  font-weight: bold;
+}
+
+.event-button {
+  background-color: #256288;
+  color: white;
+  margin: 8px;
+  padding: 6px 20px;
 }
