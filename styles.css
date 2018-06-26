@@ -1,3 +1,5 @@
+/* ========== General Elements ========== */
+
 * {
   box-sizing: border-box;
 }
@@ -8,4 +10,32 @@ img {
 
 body {
   font-family: helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+
+}
+
+/* ========== Specific Elements ========== */
+
+.timeline-list {
+  display: inline-block;
+}
+
+.octicon octicon-pencil {
+  position: absolute;
+  bottom: 0;
+}
+
+.timeline-event {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+.timeline-event::before {
+  content: "";
+
+  border-left: 2px solid;
 }
