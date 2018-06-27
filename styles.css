@@ -53,6 +53,7 @@ ul {
   }
 }
 
+/* Setting up the pencil icon */
 .pencil {
   position: absolute;
   left: 49.25%;
@@ -67,6 +68,7 @@ ul {
   width: 75%;
 }
 
+/* In case of small screen, moving pencil with the line */
 @media (max-width: 768px) {
   .pencil {
     left: 3.5%;
@@ -81,8 +83,11 @@ ul {
   height: 100%;
 }
 
-/* .has-picture {
+/* has-picture is a div with the picture, date, and title.
+doing this to make the date and title site on top of the picture */
+.has-picture {
   position: relative;
+  margin-top: 30px;
 }
 
 .has-picture>.date {
@@ -93,11 +98,11 @@ ul {
 
 .has-picture>h1 {
   position: absolute;
-  top: 15%;
+  top: 30%;
   left: 5%;
-  color: #DC5C60;
-} */
-
+  color: white;
+  background-color: black;
+}
 
 /* One small screens, adjust the position of the timeline-event to coordinate with the line that is also moved */
 @media (max-width: 768px) {
@@ -140,7 +145,6 @@ ul {
     left: 100%;
   }
 }
-
 
 .date {
   background-color: #EC515C;
