@@ -144,7 +144,7 @@ doing this to make the date and title site on top of the picture */
 
 /* On big screens with some events on left, make the arrow point right */
 @media (min-width: 768px) {
-  .timeline-event:nth-child(even)::after {
+  .timeline-event:nth-child(4n+2)::after {
     content: "";
     height: 0;
     width: 0;
